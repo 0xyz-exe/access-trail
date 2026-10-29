@@ -1,0 +1,29 @@
+[project]
+name = "access-trail"
+version = "0.1.0"
+description = "AccessTrail — Identity, Access Review & Permission Audit Platform"
+readme = "README.md"
+authors = [
+    { name = "0xyz-exe", email = "danielachmadf@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "httpx>=0.28.1",
+    "pydantic>=2.10.0",
+    "pytest>=8.3.0",
+    "python-multipart>=0.0.20",
+    "sqlalchemy>=2.0.36",
+    "uvicorn>=0.34.0",
+]
+
+[project.scripts]
+access-trail = "backend.app.cli.main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

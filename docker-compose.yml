@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./data/accesstrail.db
+      - SECRET_KEY=accesstrail-production-super-secret-key-32chars
+      - ENVIRONMENT=production
+    volumes:
+      - app_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  app_data:
