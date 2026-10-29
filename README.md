@@ -30,10 +30,18 @@
 
 ## Repository Details
 
-- **GitHub Repository**: [https://github.com/0xyz-exe/access-trail](https://github.com/0xyz-exe/access-trail)
-- **Maintainer**: `0xyz-exe` (danielachmadf@gmail.com)
-- **License**: MIT
-- **Architecture**: Single-tenant / Multi-tenant modular monolith (FastAPI backend + Vite React SPA)
+| Attribute | Specification |
+| :--- | :--- |
+| **Repository URL** | [https://github.com/0xyz-exe/access-trail](https://github.com/0xyz-exe/access-trail) |
+| **Maintainer** | `0xyz-exe` ([danielachmadf@gmail.com](mailto:danielachmadf@gmail.com)) |
+| **License** | [MIT License](LICENSE) |
+| **Architecture** | Single-tenant / Multi-tenant modular monolith (FastAPI backend + Vite React SPA) |
+| **Backend Runtime** | Python 3.12+, FastAPI, SQLAlchemy 2.x, Pydantic v2, SQLite / PostgreSQL |
+| **Frontend Runtime** | React 19, TypeScript strict mode, Vite 6, Tailwind CSS v4, Lucide Icons |
+| **Security Controls** | PBKDF2-HMAC-SHA256 (600,000 iterations), SHA-256 Hash Chaining, Formula Sanitization, Separation of Duties (Anti-Self Approval) |
+| **CI / CD Pipeline** | GitHub Actions (`.github/workflows/ci.yml`) |
+| **Containerization** | Multi-stage Dockerfile & Docker Compose (`docker-compose.yml`) |
+| **GitHub Topics** | `access-review`, `audit-trail`, `compliance`, `cybersecurity`, `fastapi`, `iam`, `identity-governance`, `least-privilege`, `python`, `react`, `typescript`, `zero-trust` |
 
 ---
 
