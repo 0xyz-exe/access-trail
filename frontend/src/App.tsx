@@ -34,8 +34,9 @@ import {
 } from './types'
 
 export default function App() {
+  const initialTab = (new URLSearchParams(window.location.search).get('tab') || 'dashboard') as any
   const [currentUser, setCurrentUser] = useState<User | null>(null)
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'identities' | 'reviews' | 'revocations' | 'findings' | 'audit' | 'governance' | 'reports'>('dashboard')
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'identities' | 'reviews' | 'revocations' | 'findings' | 'audit' | 'governance' | 'reports'>(initialTab)
   const [stats, setStats] = useState<DashboardStats | null>(null)
   const [loading, setLoading] = useState(false)
   const [notice, setNotice] = useState<{ type: 'success' | 'error'; message: string } | null>(null)

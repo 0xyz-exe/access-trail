@@ -12,9 +12,19 @@
 
 ---
 
-## Console Overview
+## Platform Screenshots
 
-![AccessTrail Security Operations Console](docs/screenshots/dashboard.png)
+### Security Operations Dashboard
+![AccessTrail Security Operations Dashboard](docs/screenshots/dashboard.png)
+
+### Centralized Identity Inventory & Effective Access Inspection
+![AccessTrail Identity Inventory](docs/screenshots/identities.png)
+
+### Certification Workbench & Separation of Duties (Anti-Self Approval)
+![AccessTrail Certification Workbench](docs/screenshots/reviews.png)
+
+### Cryptographic Tamper-Evident SHA-256 Audit Trail
+![AccessTrail Cryptographic Audit Chain](docs/screenshots/audit.png)
 
 ---
 
