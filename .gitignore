@@ -12,6 +12,7 @@ build/
 # Node
 frontend/node_modules/
 frontend/dist/
+*.tsbuildinfo
 
 # AccessTrail Local DB and secrets
 data/
